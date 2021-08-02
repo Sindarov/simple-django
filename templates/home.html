@@ -5,9 +5,12 @@
 	<title>Home</title>
 </head>
 <body>
-	{% extends 'base.html' %}
-	{% block content %}
-	<h1>bu bizning asosiy sahifamiz</h1>
-	{% endblock content %}
+	<h1>My Posts</h1>
+	<ul>
+		{% for post in object_list %}
+		<li><h2>{{ post.title }}</h2></li>
+		<p>{{ post.text }}</p>
+		{% endfor %}
+	</ul>
 </body>
 </html>
