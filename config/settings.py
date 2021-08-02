@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '%#!p*7a9jjn)%ff(@w$j&jk6s%6ypl7%kzh(oa3=g##ouk#hg0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['django-mango01.herokuapp.com' , '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
